@@ -110,8 +110,8 @@ print(isPrime(num: 11))
 /// Take average of two numbers, if there is a decimal place, round up
 /// Input 5 and 6 will return 6
 func averageTwoNumberRoundUp(firstNum: Int, secondNum: Int) -> Int {
-  var average = ceil((firstNum + secondNum)/2)
-  return average
+  var average = ceil(Double(firstNum + secondNum)/2)
+  return Int(average)
 }
 
 print(averageTwoNumberRoundUp(firstNum: 5, secondNum: 6))
